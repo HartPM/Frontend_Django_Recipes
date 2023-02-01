@@ -47,7 +47,7 @@ function RecipeCard({getMyRecipes}: RecipesProps) {
 
   const makeAPICall = async () => {
     try {
-      const res = await fetch('www.themealdb.com/api/json/v1/1/random.php');
+      const res = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
       const data = await res.json();
       const recipeObj = data.meals[0];
 
