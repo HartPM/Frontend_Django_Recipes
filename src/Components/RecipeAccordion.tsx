@@ -39,7 +39,7 @@ function RecipeAccordion({recipe, getMyRecipes}: SingleRecipeProps) {
         const button: HTMLButtonElement = event.currentTarget;
         const recipeId = button.value;
 
-        fetch(`http://localhost:8000/recipes/${recipeId}/destroy`, { method: 'DELETE' })
+        fetch(`https://djangorecipes.onrender.com/recipes/${recipeId}/destroy`, { method: 'DELETE' })
         .then(res => res.json())
         .then(data => {
             if (data.message === 'Recipe was deleted') {

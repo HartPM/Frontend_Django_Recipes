@@ -69,7 +69,7 @@ function EditRecipeForm({recipe, ingredients, hideForm}: EditProps) {
             recipeObj[key]= val;
         };
 
-        fetch(`http://localhost:8000/recipes/${recipe.id}/edit/`, {
+        fetch(`https://djangorecipes.onrender.com/recipes/${recipe.id}/edit/`, {
             method: 'PATCH',
             body: JSON.stringify(recipeObj),
             headers: {'Content-type': 'application/json'},

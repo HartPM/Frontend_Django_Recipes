@@ -13,7 +13,7 @@ function App() {
 
   const getMyRecipes = async () => {
       try {
-        const res = await fetch('http://localhost:8000/recipes/');
+        const res = await fetch('https://djangorecipes.onrender.com/recipes/');
         const data = await res.json();
         setRecipes(data);
       }

@@ -80,7 +80,7 @@ function RecipeCard({getMyRecipes}: RecipesProps) {
   const handleFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
 
-    fetch('http://localhost:8000/recipes/create/', {
+    fetch('https://djangorecipes.onrender.com/recipes/create/', {
       headers: {
         'Accept': 'application/json',
         'Content-type': 'application/json'
